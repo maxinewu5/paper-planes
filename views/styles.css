@@ -1,0 +1,40 @@
+html {
+    padding-top: 2.5%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title, #send, #pickup {
+    color: black;
+}
+textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-color: whitesmoke;
+    border-style: rounded;
+    line-height: 28px;
+}
+input:focus {
+    border: lightblue;
+}
+button {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.message{
+    list-style: none;
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: black;
+}

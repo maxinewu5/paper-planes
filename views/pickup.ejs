@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Planes</title>
+    <style>
+        html {
+            padding-top: 2.5%;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #title, #send, #pickup {
+            color: black;
+        }
+        textarea {
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border-color: whitesmoke;
+            border-style: rounded;
+            line-height: 28px;
+        }
+        input:focus {
+            border: lightblue;
+        }
+        button {
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 2px;
+            color: black;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .message{
+            list-style: none;
+            background-color: whitesmoke;
+            width: 50%;
+            padding: 5%;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/originals/96/32/0d/96320d0dd27aa5f4a49a1f99abad03ad.png" height="75">
+    <h1 id="title"><b>welcome to paper planes</b></h1>
+
+    <h3 id="pickup">pick up a paper plane >></h2>
+    <p>find other paper planes just like yours.</p>
+
+    <ul class="messages">
+        <!-- Loop through quotes -->
+         <% for(var i = 0; i < messages.length; i++) {%>
+            <li class="message">
+            <!-- Output message from the iterated quote object -->
+            <p><%= messages[i].message %></p>
+            <p>-----------</p>
+            <!-- Output tags from the iterated quote object -->
+            <p><%= messages[i].tags %></p>
+            </li>
+        <% } %>
+    </ul>
+
+    <h3 id="send">send a paper plane >></h3>
+    <form action="/" method="GET">
+        <button type="submit">go!</button>
+    </form>
+
+</body>
+</html>
+
+<!--
+    TODO
+    - figure out a frontend
+    - figure out the query system (random query or tag query)
+    - learn more about crud + rest + express + mongo + etc
+-->
