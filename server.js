@@ -8,9 +8,10 @@ app.set('view engine', 'ejs')
 const MongoClient = require('mongodb').MongoClient
 
 //var process.env.MONGODB_URI = "mongodb+srv://maxinewu:SoxDLldTwouxDLYc@cluster0.t34vh.mongodb.net/paper-planes?retryWrites=true";
-var MONGODB_URI = "mongodb+srv://maxinewu:SoxDLldTwouxDLYc@cluster0.t34vh.mongodb.net/paper-planes?retryWrites=true";
-var dev_db_url = 'mongodb+srv://maxinewu:NvA0pnjzOrLOlZm1@cluster0.3jbgg.mongodb.net/paper-planes?retryWrites=true&w=majority';
-var mongoDB = MONGODB_URI || dev_db_url;
+//var MONGODB_URI = "mongodb+srv://maxinewu:SoxDLldTwouxDLYc@cluster0.t34vh.mongodb.net/paper-planes?retryWrites=true";
+//var dev_db_url = 'mongodb+srv://maxinewu:NvA0pnjzOrLOlZm1@cluster0.3jbgg.mongodb.net/paper-planes?retryWrites=true&w=majority';
+//var mongoDB = MONGODB_URI || dev_db_url;
+var mongoDB = "mongodb+srv://maxinewu:SoxDLldTwouxDLYc@cluster0.t34vh.mongodb.net/paper-planes?retryWrites=true";
 console.log("mongodb: " + mongoDB);
 
 MongoClient.connect(mongoDB, {useUnifiedTopology: true}, (err, client) => {
